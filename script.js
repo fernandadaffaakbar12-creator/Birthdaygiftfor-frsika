@@ -245,7 +245,7 @@
         const pinPopupClose = document.getElementById('pin-popup-close');
 
         // DEFAULT PIN: Silakan ubah angka ini jika ingin PIN lain
-        const SECRET_PIN = "0000";
+        const SECRET_PIN = "2009";
 
         let pinAttempt = 0;
         let popupTimeout = null;
@@ -366,22 +366,22 @@
                                 closePinPopup();
                                 setTimeout(() => {
                                     const pinScreen = document.getElementById('pin-screen');
-                                    
+
                                     // 1. Fade out PIN screen
                                     pinScreen.classList.remove('active');
 
                                     // 2. Wait for fade out to complete (1 detik)
                                     setTimeout(() => {
                                         pinScreen.style.display = 'none';
-                                        
+
                                         const loadingScreen = document.getElementById('mini-game-screen');
                                         if (loadingScreen) {
                                             loadingScreen.style.display = 'flex';
-                                            
+
                                             // 3. Jeda sedikit lalu jalankan Fade in Mini Game
                                             setTimeout(() => {
                                                 loadingScreen.style.opacity = '1';
-                                                
+
                                                 // 4. Inisialisasi game setelah mulai muncul
                                                 initMiniGame();
                                             }, 50);
@@ -395,22 +395,22 @@
                                 closePinPopup();
                                 setTimeout(() => {
                                     const pinScreen = document.getElementById('pin-screen');
-                                    
+
                                     // 1. Fade out PIN screen
                                     pinScreen.classList.remove('active');
 
                                     // 2. Wait for fade out to complete (1 detik)
                                     setTimeout(() => {
                                         pinScreen.style.display = 'none';
-                                        
+
                                         const loadingScreen = document.getElementById('mini-game-screen');
                                         if (loadingScreen) {
                                             loadingScreen.style.display = 'flex';
-                                            
+
                                             // 3. Jeda sedikit lalu jalankan Fade in Mini Game
                                             setTimeout(() => {
                                                 loadingScreen.style.opacity = '1';
-                                                
+
                                                 // 4. Inisialisasi game setelah mulai muncul
                                                 initMiniGame();
                                             }, 50);
